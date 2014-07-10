@@ -9,8 +9,8 @@ This is meant to be built off of for special stories. It's not to be taken as is
 
 ## Demos
 
-* [Assorted media](http://registerguard.github.io/bruce/)
-* [WWII story](http://registerguard.github.io/bruce/wwii)
+* [Assorted media](http://pages.registerguard.com/bruce/)
+* [WWII story](http://pages.registerguard.com/bruce/wwii)
 
 ## Notes
 
@@ -44,7 +44,7 @@ To make a vertical image display properly, please add in this inline CSS.
 
 **Note:** IMG width and figcaption style. Also, be sure to add in appropriate img path and caption.
 
-```
+```html
 	<div class="bat_media">
 		
 		<figure>
@@ -77,7 +77,7 @@ Since the template is built on mobile primarily, the only media query needed is 
 
 They go outside `.bat_story`
 
-```
+```html
 	</div><!-- /.bat_story -->
 		
 	<h2>Fortune smiles and frowns</h2>
