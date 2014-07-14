@@ -1,41 +1,14 @@
-/* start of .mm */
-
-.mm {
-	height: 0;
-	padding-bottom: 56.25%; /*16:9 = (9 / 16 = .5625) x 100*/
-	position: relative;
-	overflow: hidden;
-	/*margin: {
-		top: #{rex_relative($base_margin)}rem;
-		bottom: #{rex_relative($base_margin)}rem;
-	}*/
+body{
+	font-family: Cambria, Georgia, serif;
 }
 
-.mm .embed {
-	border: 0;
-	width: 100% !important;
-	height: 100% !important;
-	max-width: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+a:link { color: #64c9ff; text-decoration: none; }
 
-.theatre { padding-bottom: 59.171597633136%; } /*1.69:1 = (1 / 1.69 = .59171597633136) x 100*/
+a:visited { color: #00517e; text-decoration: none; }
 
-.slide { padding-bottom: 66.666666666667%; } /*3:2 = (2 / 3 = .66666666666667) x 100*/
+a:hover { color: #ca4700; text-decoration: underline; }
 
-.tv { padding-bottom: 75%; } /*4:3 = (3 / 4 = .75) x 100*/
-
-/* end of .mm */
-
-a:link { color: #444; }
-
-a:visited { color:#888; }
-
-a:hover { color: #222; }
-
-a:active { color: #666; }
+a:active { color: #ca4700; text-decoration: underline; }
 
 .bat_top{
 	position:absolute;
@@ -49,8 +22,8 @@ a:active { color: #666; }
 }
 
 .bat_wrap h1{
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight:300;
+	font-family: "MillerHeadlineBold", Cambria, Georgia, serif;
+	font-weight:900;
 	font-size: 2.5em;
 	margin:.5em 0 .5em 0;
 }
@@ -59,21 +32,25 @@ a:active { color: #666; }
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	padding: 10px 0 10px 0;
+	font-family: Cambria, Georgia, serif;
 }
 
 .bat_byline{
-	font-weight: 400;
+	font-weight: 900;
+	font-family: Cambria, Georgia, serif!important;
 }
 
 .bat_date{
 	font-weight: 100;
+	color:#666;
+	font-family: Cambria, Georgia, serif!important;
 }
 
 .bat_wrap h2{
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
 	font-size: 2em;
 	font-weight: 400;
-	margin: 3em 0 1em 0;
+	margin: 1em 0 1em 0;
 }
 
 .bat_info{
@@ -99,9 +76,9 @@ a:active { color: #666; }
 figcaption{
 	font-family: Cambria, Georgia, serif;
 	font-weight: 100;
-	font-size: .75em;
+	font-size: .85em;
 	font-style: italic;
-	color: #444;
+	color: #111;
 	margin: 0 0 10px 0;
 }
 
@@ -116,24 +93,23 @@ figcaption{
 }
 
 .bat_quote{
-	border-top:3px solid black;
+	border-top: 3px solid black;
 	border-bottom:3px solid black;
-	margin: 5%;
-	padding: 5%;
+	margin: 4%;
+	padding: 4%;
+	color:#444;
 }
 
 .bat_quote h4{
-	font-family: Arial, sans-serif;
-	font-weight:900;
+	font-family:Cambria,Georgia,serif;
+	font-style:italic;
 	font-size:1.5em;
-	color:#444;
 	margin:0;
 	margin-bottom:0;
 }
 
 .bat_quote p{
-	font-family: Georgia, serif;
-	font-weight:900;
+	font-family:Cambria,Georgia,serif;
 	font-size:.75em;
 	font-style: italic;
 	margin: 10px 0 0 5%;
@@ -143,7 +119,7 @@ figcaption{
 	width:100%;
 }
 .bat_chart div {
-	font: 1em sans-serif;
+	font: 1em serif;
 	background-color: #000;
 	text-align: right;
 	padding: 3px;
@@ -209,20 +185,20 @@ footer{
 
 	.bat_media{
 		float:right;
-		width:40%;
+		width:60%;
 		margin-left:10%;
 	}
 	
-	.fullwrap{
+	.fullwidth{
 		width:90%;
 		margin:5%;
 	}
 	
 	.bat_quote{
-		border-top: 10px solid black;
-		border-bottom:10px solid black;
+		border-top: 5px solid black;
+		border-bottom:5px solid black;
 	}
-
+	
 	.bat_quote h4{
 		font-weight:100;
 		font-size:2.5em;
@@ -239,9 +215,73 @@ footer{
 	}
 	
 	.bat_wrap h2{
-		font-family: Helvetica, Arial, sans-serif;
-		font-size: 2em;
+		font-size: 2.25em;
 		font-weight: 400;
 		margin: 3em 0 1em 0;
 	}
 }
+
+/*FONTS*/
+
+@font-face {
+	font-family: "BentonSansCond Regular";
+	src: url("http://fonts.registerguard.com/benton/sanscondbold.eot");
+	src: url("http://fonts.registerguard.com/benton/sanscondbold.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.woff") format("woff"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.svg#web") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "MillerHeadline Bold";
+	src: url("http://fonts.registerguard.com/miller/headlinebold.eot");
+	src: url("http://fonts.registerguard.com/miller/headlinebold.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/miller/headlinebold.woff") format("woff"),
+		url("http://fonts.registerguard.com/miller/headlinebold.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/miller/headlinebold.svg#web") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "MillerHeadline Light";
+	src: url("http://fonts.registerguard.com/miller/headlinelight.eot");
+	src: url("http://fonts.registerguard.com/miller/headlinelight.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/miller/headlinelight.woff") format("woff"),
+		url("http://fonts.registerguard.com/miller/headlinelight.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/miller/headlinelight.svg#web") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+/* start of .mm */
+
+.mm {
+	height: 0;
+	padding-bottom: 56.25%; /*16:9 = (9 / 16 = .5625) x 100*/
+	position: relative;
+	overflow: hidden;
+	/*margin: {
+		top: #{rex_relative($base_margin)}rem;
+		bottom: #{rex_relative($base_margin)}rem;
+	}*/
+}
+
+.mm .embed {
+	border: 0;
+	width: 100% !important;
+	height: 100% !important;
+	max-width: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.theatre { padding-bottom: 59.171597633136%; } /*1.69:1 = (1 / 1.69 = .59171597633136) x 100*/
+
+.slide { padding-bottom: 66.666666666667%; } /*3:2 = (2 / 3 = .66666666666667) x 100*/
+
+.tv { padding-bottom: 75%; } /*4:3 = (3 / 4 = .75) x 100*/
+
+/* end of .mm */
