@@ -10,17 +10,20 @@ a:hover { color: #ca4700; text-decoration: underline; }
 
 a:active { color: #ca4700; text-decoration: underline; }
 
+/* for top image */
 .bat_top{
 	position:absolute;
 	height:25%;
 	top:0;
 }
 
+/* center and pad story content */
 .bat_wrap{
 	width:90%;
 	margin:0 auto;
 }
 
+/*story headline*/
 .bat_wrap h1{
 	font-family: "MillerHeadlineBold", Cambria, Georgia, serif;
 	font-weight:900;
@@ -28,6 +31,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 	margin:.5em 0 .5em 0;
 }
 
+/* byline */
 .bat_bydate{
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -46,6 +50,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 	font-family: Cambria, Georgia, serif!important;
 }
 
+/* sub heads */
 .bat_wrap h2{
 	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
 	font-size: 2em;
@@ -53,17 +58,15 @@ a:active { color: #ca4700; text-decoration: underline; }
 	margin: 1em 0 1em 0;
 }
 
+/* side bar info breakouts */
 .bat_info{
 	margin: 5%;
 	padding: 0 5% 0 5%;
 	border-left: 3px solid black;
 }
 
+/* non full-width media */
 .bat_media{}
-
-.bat_media .pure-table{
-	margin: 0 auto;
-}
 
 .bat_media iframe{
 	width:100%;
@@ -73,6 +76,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 	text-align: center;
 }
 
+/* caption styles */
 figcaption{
 	font-family: Cambria, Georgia, serif;
 	font-weight: 100;
@@ -82,16 +86,19 @@ figcaption{
 	margin: 0 0 10px 0;
 }
 
+/* full-width caption style */
 .bat_full figcaption{
 	margin: 0;
 }
 
+/* story content */
 .bat_story{
 	font-family: Cambria, Georgia, serif;
 	font-size: 1em;
 	line-height: 1.75;
 }
 
+/* pull quote */
 .bat_quote{
 	border-top: 3px solid black;
 	border-bottom:3px solid black;
@@ -100,6 +107,7 @@ figcaption{
 	color:#444;
 }
 
+/* pull quote content */
 .bat_quote h4{
 	font-family:Cambria,Georgia,serif;
 	font-style:italic;
@@ -108,6 +116,7 @@ figcaption{
 	margin-bottom:0;
 }
 
+/* pull quote attribution */
 .bat_quote p{
 	font-family:Cambria,Georgia,serif;
 	font-size:.75em;
@@ -115,6 +124,7 @@ figcaption{
 	margin: 10px 0 0 5%;
 }
 
+/* for responsive d3 */
 .bat_chart{
 	width:100%;
 }
@@ -129,8 +139,23 @@ figcaption{
 .bat_chart div:hover{
 	background-color: #444;
 }
+
+/* html5 audio */
 audio{
 	width: 100%;
+}
+
+/* footer */
+footer{
+	text-align: center;
+	font-family: Georgia, serif;
+	font-style: italic;
+	padding-bottom: 5em;
+}
+
+/* media content in table */
+.bat_media .pure-table{
+	margin: 0 auto;
 }
 
 .pure-g img:hover{
@@ -141,13 +166,6 @@ audio{
 	opacity:.9;
 }
 
-footer{
-	text-align: center;
-	font-family: Georgia, serif;
-	font-style: italic;
-	padding-bottom: 5em;
-}
-
 @media (min-width: 48em) {
 	
 	.bat_date{
@@ -155,65 +173,71 @@ footer{
 	}
 }
 
+/* screens greater that 980 px AKA: desktop */
+
 @media (min-width: 980px) {
 	
+	/* paralax top image */
 	.bat_paratop{
 		position:absolute;
 		height:90%;
 		margin:0 auto;
 	}
 	
+	/* set max width */
 	.bat_wrap{
-		width:90%;
 		max-width:980px;
-		margin:0 auto;
 	}
 
+	/* story head up font size */
 	.bat_wrap h1{
 		font-size: 3.5em;
 	}
 
+	/* center up center image if there is a max-width*/
 	.bat_full{
-		/*max-width:1320px;*/
-		margin:0 auto;
+		/*margin:0 auto;
+		max-width: 1320px;*/
 	}
 
+	/* story style */
 	.bat_story{
 		width:75%;
 		font-size: 1.25em;
 	}
 
+	/* media float to side */
 	.bat_media{
 		float:right;
 		width:60%;
 		margin-left:10%;
 	}
 	
-	.fullwidth{
-		width:90%;
-		margin:5%;
-	}
-	
+	/* thicken pull quote borders */
 	.bat_quote{
 		border-top: 5px solid black;
 		border-bottom:5px solid black;
 	}
 	
+	/* increase pull quote size */
 	.bat_quote h4{
 		font-weight:100;
 		font-size:2.5em;
 	}
 
+	/* increase attribution size */
 	.bat_quote p{
 		font-weight:900;
 		font-size:1em;
 		margin: 10px 0 0 5%;
 	}
 	
+	/* make it full width when it goes out to three columns */
 	.bat_media .pure-table{
 		margin: 0;
 	}
 	
+	/* make sub heads bigger */
 	.bat_wrap h2{
 		font-size: 2.25em;
 		font-weight: 400;
