@@ -9,6 +9,8 @@ This is meant to be built off of for special stories. It's not to be taken as is
 
 ## Demos
 
+![screenshot](https://github.com/rgpages/bruce/blob/gh-pages/default.png)
+
 * [Assorted media](http://pages.registerguard.com/bruce/)
 * [WWII story](http://pages.registerguard.com/wwii) ([GitHub repo](http://github.com/rgpages/wwii))
 
