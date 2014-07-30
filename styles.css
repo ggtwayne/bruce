@@ -309,3 +309,11 @@ footer{
 .tv { padding-bottom: 75%; } /*4:3 = (3 / 4 = .75) x 100*/
 
 /* end of .mm */
+
+/* addthis */
+.addthis_sharing_toolbox{
+	width: 20%;
+	float: right;
+	margin-top: 24px;
+	text-align: right;
+}
