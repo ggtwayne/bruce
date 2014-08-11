@@ -88,7 +88,7 @@ figcaption{
 
 /* full-width caption style */
 .bat_full figcaption{
-	margin: 0;
+	margin: 0 0 0 1em;
 }
 
 /* story content */
@@ -98,10 +98,28 @@ figcaption{
 	line-height: 1.75;
 }
 
+/* drop cap */
+.bat_first:first-letter{
+	float: left;
+	color: black;
+	font-size: 3.5em;
+	line-height: .9em;
+	padding-top: 4px;
+	padding-right: 8px;
+	padding-left: 3px;
+	font-family:Georgia;
+}
+
+/* story breaks */
+.bat_break{
+	width: 50%;
+	margin: 4em auto;
+}
+
 /* pull quote */
 .bat_quote{
-	border-top: 3px solid black;
-	border-bottom:3px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 	margin: 4%;
 	padding: 4%;
 	color:#444;
@@ -205,18 +223,18 @@ footer{
 		width:75%;
 		font-size: 1.25em;
 	}
+	
+	.bat_story_full{
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+	}
 
 	/* media float to side */
 	.bat_media{
 		float:right;
 		width:60%;
 		margin-left:10%;
-	}
-	
-	/* thicken pull quote borders */
-	.bat_quote{
-		border-top: 5px solid black;
-		border-bottom:5px solid black;
 	}
 	
 	/* increase pull quote size */
@@ -325,3 +343,11 @@ footer{
 	}
 }
 /* end of addthis */
+
+/*footer*/
+#bd_press{
+	font: .75em Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	color: #999;
+}
