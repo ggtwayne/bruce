@@ -8,6 +8,17 @@ Open `index.html` and paste in html story before in the first `.bat_story` div. 
 
 ---
 
+## Table of Contents
+
+* [Quick Start](#quick-start)
+* [Demos](#demos)
+* [Notes](#notes)
+  * [Vertical images](#vertical-images)
+  * [Media queries](#media-queries)
+  * [Sub headlines](#sub-heads)
+* [Reference](#reference)
+
+---
 
 Simple, reponsive story template created for [registerguard.com](http://registerguard.com) by [Rob Denton](http://github.com/robertdenton). 
 
@@ -29,24 +40,24 @@ This is meant to be built off of for special stories. It's not to be taken as is
 * Also used is [d3.js](http://d3js.org) but that is not necessary.
 * This theme excels with a lot of different media. Supported media:
   * Hi-res images - still and gif
-    * Full width (.bat_full)
-    * Side embed (.bat_media)
-    * Vertical (.bat_media && width:70%;)
-  * Video (.bat_media)
-  * Audio (.bat_media)
+    * Full width (`.bat_full`)
+    * Side embed (`.bat_media`)
+    * Vertical (`.bat_media` && width:70%;)
+  * Video (`.bat_media`)
+  * Audio (`.bat_media`)
     * HTML5
     * Soundcloud embed
-  * Maps (.bat_full && .bat_media)
-  * Block quotes (.bat_quote)
-  * Charts - d3.js (.bat_media)
-  * HTML tables (.bat_media)
-  * Twitter embeds (.bat_media)
-  * Info boxes (.bat_media > .bat_info)
+  * Maps (`.bat_full` && `.bat_media`)
+  * Block quotes (`.bat_quote`)
+  * Charts - d3.js (`.bat_media`)
+  * HTML tables (`.bat_media`)
+  * Twitter embeds (`.bat_media`)
+  * Info boxes (`.bat_media` > `.bat_info`)
 * All media in `<figure>` tags should have `<figcaption>` tags.
 * Preferred viewing size:
   * Mobile
   * 1320px wide desktop
-* d3.js cannot be previewed in Chrome. Use Firefox for local dev.
+* d3.js cannot be previewed in Chrome. Use Firefox for local dev. Better yet start up xampp and use a user.local spoof.
 
 
 #### Verical images
