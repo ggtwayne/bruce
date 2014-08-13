@@ -40,6 +40,14 @@ a:active { color: #ca4700; text-decoration: underline; }
 	margin: .5em 0 .5em 0;
 }
 
+/* sub heads */
+.bat_wrap h3{
+	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
+	font-size: 2em;
+	font-weight: 400;
+	margin: 1em 0 1em 0;
+}
+
 .bat_head{
 	display:block;
 	color:#fff;
@@ -75,14 +83,6 @@ a:active { color: #ca4700; text-decoration: underline; }
 	font-family: Cambria, Georgia, serif!important;
 }
 
-/* sub heads */
-.bat_wrap h3{
-	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
-	font-size: 2em;
-	font-weight: 400;
-	margin: 1em 0 1em 0;
-}
-
 /* side bar info breakouts */
 .bat_info{
 	margin: 5%;
@@ -114,7 +114,7 @@ figcaption{
 
 /* full-width caption style */
 .bat_full figcaption{
-	padding:0 1em;
+	padding:0 1em; /* move just off edge */
 }
 
 /* story content */
