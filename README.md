@@ -4,6 +4,8 @@
 
 [Download zip](https://github.com/rgpages/bruce/archive/gh-pages.zip) and trash everything except for the `getting-started` folder.
 
+Open `index.html` and paste in html story before in the first `.bat_story` div.  Then read the story and add in images where appropriate using example images below as templates. When you're done, delete the template lines and your page should be ready to roll.
+
 ---
 
 
