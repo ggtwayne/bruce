@@ -32,7 +32,10 @@ Open `index.html` and paste in html story before in the first `.bat_story` div. 
 ![screenshot](https://github.com/rgpages/bruce/blob/gh-pages/default.png)
 
 * [Assorted media](http://pages.registerguard.com/bruce/)
-* [WWII story](http://pages.registerguard.com/wwii) ([GitHub repo](http://github.com/rgpages/wwii))
+* [WWII story](http://pages.registerguard.com/wwii) ([GitHub](http://github.com/rgpages/wwii))
+* [Up in flames - Springfield Plywood and Veneer mill fire](http://pages.registerguard.com/springfield-plywood-and-veneer-mill-fire) ([Github](http://github.com/rgpages/springfield-plywood-and-veneer-mill-fire/))
+* [Fun & games: The sights and sounds of the Lane County Fair](http://pages.registerguard.com/lane-county-fair/) ([Github](http://github.com/rgpages/lane-county-fair/))
+* [River run: Jet boat tours](http://pages.registerguard.com/jet-boat-tour/) ([Github](http://github.com/rgpages/jet-boat-tour/))
 
 ## Notes
 
