@@ -95,3 +95,29 @@ They go outside `.bat_story`
 		
 	<div class="bat_story">
 ```
+
+## Reference
+
+* `.bat_paratop`: space on top for parallax image, first large image
+* `.bat_wrap`: content wrapper
+  * `h1`: headline
+  * `h2`: deck
+  * `h3`: sub heads in story
+* `.bat_head`: on-image hammerhead
+  * `p`: on-image deck
+* `.bat_bydate`: containter for byline and date pubbed
+  * `.bat_byline`: byline
+  * `.bat_date`: date published
+* `.bat_info`: info breakout in story
+* `.bat_media`: floating image on right side of story at desktop
+  * `.pure-table`: [pure css](http://purecss.io/) template table
+* `figcaption`: caption styles
+* `.bat_full`: full-width photo
+* `.bat_story`: text style
+* `.bat_quote`: pull quote container
+  * `h4`: quote text
+  * `p`: attribution
+* `.bat_chart`: d3 charts
+* `.mm`: responsive iframes, etc.
+* `#bd_press`: footer
+

@@ -2,13 +2,13 @@ body{
 	font-family: Cambria, Georgia, serif;
 }
 
-/*a:link { color: #64c9ff; text-decoration: none; }
+a:link { color: #64c9ff; text-decoration: none; }
 
 a:visited { color: #00517e; text-decoration: none; }
 
 a:hover { color: #ca4700; text-decoration: underline; }
 
-a:active { color: #ca4700; text-decoration: underline; }*/
+a:active { color: #ca4700; text-decoration: underline; }
 
 /* paralax top image */
 .bat_paratop figcaption{
@@ -20,21 +20,6 @@ a:active { color: #ca4700; text-decoration: underline; }*/
 	position:relative;
 	width:90%;
 	margin:0 auto;
-}
-
-.bat_head{
-	display:block;
-	color:#fff;
-	position: relative;
-	bottom:4em;
-	width:100%;
-	padding:0;
-}
-
-.bat_head p{
-	font-size:2.5em;
-	margin:0;
-	padding:.3em;
 }
 
 /*story headline*/
@@ -53,6 +38,21 @@ a:active { color: #ca4700; text-decoration: underline; }*/
 	font-weight:100;
 	font-size: 1.5em;
 	margin: .5em 0 .5em 0;
+}
+
+.bat_head{
+	display:block;
+	color:#fff;
+	position: relative;
+	bottom:4em;
+	width:100%;
+	padding:0;
+}
+
+.bat_head p{
+	font-size:2.5em;
+	margin:0;
+	padding:.3em;
 }
 
 /* byline */
