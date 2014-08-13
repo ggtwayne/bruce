@@ -60,7 +60,7 @@ This is meant to be built off of for special stories. It's not to be taken as is
 * d3.js cannot be previewed in Chrome. Use Firefox for local dev. Better yet start up xampp and use a user.local spoof.
 
 
-#### Verical images
+#### Vertical images
 
 To make a vertical image display properly, please add in this inline CSS.
 
