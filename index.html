@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-
+<!-- Created by Rob Denton/The Register-Guard on July 18,2014 -->
 <head>
 	
 	<meta charset="utf-8">
@@ -345,66 +345,98 @@
 	<!-- d3.js d3js.org -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.8/d3.min.js" charset="utf-8"></script>
 	<!-- begin d3 script -->
-	<script>
-	var data;
-	//get json data, everything that uses this data must be in this function
-	d3.json("data.json", function(error, json){
-		if (error){
-			console.log(error);
-		} 
-		else {
-			console.log(json);
-		}
-		//set our var to the data
-		data=json;
-		//set the scales to match our data
-		var x = d3.scale.linear()
-			.domain([0, function(d){
-				return d3.max(d.Total)
-			}])
-			.range([0, function(d){
-				return d3.max(d.Total)
-			}]);
-			//start drawing graph
-			var chart = d3.select(".bat_chart")
-		chart.selectAll("div")
-			//bind data
-				.data(data)
-				.enter().append("div")
-				.style("width", function(d) { 
-					//responsive bars to match width of box
-					return ((d.Complete/d.Total)*100) + "%";
-				})
-				.text(function(d) {
-					//write out text in box
-					return d.abtest + ": " + d.Complete + "/" + d.Total;
-				})
-				//style the text
-				//.style("height", "23px")
-				//on hover return the percent of clicks		 
-				.on("mouseover", function(d){
-					d3.select(this)
-						.text(function(d){
-								//be sure to round it so there aren't crazy fractions
-								var percent = d.Complete/d.Total;
-								round = Math.round(percent*100);
-								return d.abtest + ": " + round + "%";
-							})
-			})
-				.on("mouseout", function(d){
-					//on not hover return to original text
-					d3.select(this)
-						.text(function(d){
-							return d.abtest + ": " + d.Complete + "/" + d.Total;
-						})
-				})
-	});// end JSON function
-	</script>
 	
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.26/skrollr.min.js"></script>
-
-	<script type="text/javascript">
+	
+	<script>
+	
+		// Make the looping video an image on iOS devices so that the play button doesn't show over any possible text
+		var device = navigator.userAgent.toLowerCase();
+		var ios = device.match(/(iphone|ipod|ipad)/);
+		var video = $('video');
+		var img = video.children("img");
+		if (ios) {
+			$(video).replaceWith(img);
+		}
+		
+		// break byline to two lines so that "| The Register-Guard" doesn't break with multiple authors
+		if ($(window).width() <= 980){
+			$("#bat_byline_break").replaceWith("<br>");
+		}
+		
+		// smooth scrolling on an in-page link
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+		
+		var data;
+		//get json data, everything that uses this data must be in this function
+		d3.json("data.json", function(error, json){
+			if (error){
+				console.log(error);
+			} 
+			else {
+				console.log(json);
+			}
+			//set our var to the data
+			data=json;
+			//set the scales to match our data
+			var x = d3.scale.linear()
+				.domain([0, function(d){
+					return d3.max(d.Total)
+				}])
+				.range([0, function(d){
+					return d3.max(d.Total)
+				}]);
+				//start drawing graph
+				var chart = d3.select(".bat_chart")
+			chart.selectAll("div")
+				//bind data
+					.data(data)
+					.enter().append("div")
+					.style("width", function(d) { 
+						//responsive bars to match width of box
+						return ((d.Complete/d.Total)*100) + "%";
+					})
+					.text(function(d) {
+						//write out text in box
+						return d.abtest + ": " + d.Complete + "/" + d.Total;
+					})
+					//style the text
+					//.style("height", "23px")
+					//on hover return the percent of clicks		 
+					.on("mouseover", function(d){
+						d3.select(this)
+							.text(function(d){
+									//be sure to round it so there aren't crazy fractions
+									var percent = d.Complete/d.Total;
+									round = Math.round(percent*100);
+									return d.abtest + ": " + round + "%";
+								})
+				})
+					.on("mouseout", function(d){
+						//on not hover return to original text
+						d3.select(this)
+							.text(function(d){
+								return d.abtest + ": " + d.Complete + "/" + d.Total;
+							})
+					})
+		});// end JSON function
+		
+		// skrollr
 		var s = skrollr.init();
+		
 	</script>
 	
 	<!-- Addthis script -->

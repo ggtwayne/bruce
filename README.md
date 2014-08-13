@@ -1,5 +1,12 @@
 # bruce
 
+### Quick start
+
+[Download zip](https://github.com/rgpages/bruce/archive/gh-pages.zip) and trash everything except for the `getting-started` folder.
+
+---
+
+
 Simple, reponsive story template created for [registerguard.com](http://registerguard.com) by [Rob Denton](http://github.com/robertdenton). 
 
 This is meant to be built off of for special stories. It's not to be taken as is because without a spectacular story, it doesn't mean much. It's a tool. It's a means of storytelling. It's not whats underneath but what we do with it that defines us.

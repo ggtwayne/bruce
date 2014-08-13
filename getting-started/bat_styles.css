@@ -1,0 +1,381 @@
+body{
+	font-family: Cambria, Georgia, serif;
+}
+
+/*a:link { color: #64c9ff; text-decoration: none; }
+
+a:visited { color: #00517e; text-decoration: none; }
+
+a:hover { color: #ca4700; text-decoration: underline; }
+
+a:active { color: #ca4700; text-decoration: underline; }*/
+
+/* paralax top image */
+.bat_paratop figcaption{
+	padding: 0 1em;
+}
+
+/* center and pad story content */
+.bat_wrap{
+	position:relative;
+	width:90%;
+	margin:0 auto;
+}
+
+.bat_head{
+	display:block;
+	color:#fff;
+	position: relative;
+	bottom:4em;
+	width:100%;
+	padding:0;
+}
+
+.bat_head p{
+	font-size:2.5em;
+	margin:0;
+	padding:.3em;
+}
+
+/*story headline*/
+.bat_wrap h1{
+	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
+	font-weight:900;
+	font-size: 2.5em;
+	margin:.5em 0 0em 0;
+	line-height: 1.2em
+}
+
+/*story deck*/
+.bat_wrap h2{
+	font-family: "MillerHeadline Light", Cambria, Georgia, serif;
+	color:#666;
+	font-weight:100;
+	font-size: 1.5em;
+	margin: .5em 0 .5em 0;
+}
+
+/* byline */
+.bat_bydate{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px 0 10px 0;
+	font-family: Cambria, Georgia, serif;
+}
+
+.bat_byline{
+	font-weight: 900;
+	font-family: Cambria, Georgia, serif!important;
+	font-variant:small-caps;
+}
+
+.bat_date{
+	font-weight: 100;
+	color:#666;
+	font-family: Cambria, Georgia, serif!important;
+}
+
+/* sub heads */
+.bat_wrap h3{
+	font-family: "MillerHeadline Bold", Cambria, Georgia, serif;
+	font-size: 2em;
+	font-weight: 400;
+	margin: 1em 0 1em 0;
+}
+
+/* side bar info breakouts */
+.bat_info{
+	margin: 5%;
+	padding: 0 5% 0 5%;
+	border-left: 3px solid black;
+}
+
+/* non full-width media */
+.bat_media{}
+
+.bat_media iframe{
+	width:100%;
+}
+
+.bat_media figure{
+	text-align: center;
+}
+
+/* caption styles */
+figcaption{
+	font-family: Cambria, Georgia, serif;
+	font-weight: 100;
+	font-size: .85em;
+	font-style: italic;
+	color: #111;
+	margin: 0 0 10px 0;
+	line-height: 1.2em;
+}
+
+/* full-width caption style */
+.bat_full figcaption{
+	padding:0 1em;
+}
+
+/* story content */
+.bat_story{
+	font-family: Cambria, Georgia, serif;
+	font-size: 1em;
+	line-height: 1.75;
+}
+
+/* pull quote */
+.bat_quote{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 4%;
+	padding: 4%;
+	color:#444;
+}
+
+/* pull quote content */
+.bat_quote h4{
+	font-family:Cambria,Georgia,serif;
+	font-style:italic;
+	font-size:1.5em;
+	margin:0;
+	margin-bottom:0;
+}
+
+/* pull quote attribution */
+.bat_quote p{
+	font-family:Cambria,Georgia,serif;
+	font-size:.75em;
+	font-style: italic;
+	margin: 10px 0 0 5%;
+}
+
+/* for responsive d3 */
+.bat_chart{
+	width:100%;
+}
+.bat_chart div {
+	font: 1em serif;
+	background-color: #000;
+	text-align: right;
+	padding: 3px;
+	margin: 3px;
+	color: white;
+}
+.bat_chart div:hover{
+	background-color: #444;
+}
+
+/* html5 audio */
+audio{
+	width: 100%;
+}
+
+/* footer */
+footer{
+	text-align: center;
+	font-family: Georgia, serif;
+	font-style: italic;
+	padding-bottom: 5em;
+}
+
+/* media content in table */
+.bat_media .pure-table{
+	margin: 0 auto;
+}
+
+.pure-g img:hover{
+	opacity:1;
+}
+
+.pure-g img{
+	opacity:.9;
+}
+
+@media (min-width: 48em) {
+	
+	.bat_date{
+		text-align: right;
+	}
+}
+
+/* screens greater that 980 px AKA: desktop */
+
+@media (min-width: 665px) {
+	
+	/* story head */
+	.bat_head {
+		bottom:2em;
+	}
+	
+	.bat_head p {
+		xfont-size:5em;
+	}
+}
+
+/* screens greater that 980 px AKA: desktop */
+
+@media (min-width: 980px) {
+	
+	/* set max width */
+	.bat_wrap{
+		max-width:980px;
+	}
+
+	/* story head up font size */
+	.bat_wrap h1{
+		font-size: 5em;
+	}
+	
+	/*story deck*/
+	.bat_wrap h2{
+		font-size: 2.5em;
+	}
+	
+	/* story head */
+	.bat_head {
+		bottom:0;
+	}
+	
+	.bat_head p{
+		xfont-size:7.5em;
+	}
+
+	/* center up center image if there is a max-width*/
+	.bat_full{}
+	
+	/* story style */
+	.bat_story{
+		width:75%;
+		font-size: 1.25em;
+	}
+
+	/* media float to side */
+	.bat_media{
+		float:right;
+		width:60%;
+		margin-left:10%;
+	}
+	
+	/* increase pull quote size */
+	.bat_quote h4{
+		font-weight:100;
+		font-size:2.5em;
+	}
+
+	/* increase attribution size */
+	.bat_quote p{
+		font-weight:900;
+		font-size:1em;
+		margin: 10px 0 0 5%;
+	}
+	
+	/* make it full width when it goes out to three columns */
+	.bat_media .pure-table{
+		margin: 0;
+	}
+	
+	/* make sub heads bigger */
+	.bat_wrap h3{
+		font-size: 2.25em;
+		font-weight: 400;
+		margin: 3em 0 1em 0;
+	}
+}
+
+/*FONTS*/
+
+@font-face {
+	font-family: "BentonSansCond Regular";
+	src: url("http://fonts.registerguard.com/benton/sanscondbold.eot");
+	src: url("http://fonts.registerguard.com/benton/sanscondbold.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.woff") format("woff"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/benton/sanscondbold.svg#web") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "MillerHeadline Bold";
+	src: url("http://fonts.registerguard.com/miller/headlinebold.eot");
+	src: url("http://fonts.registerguard.com/miller/headlinebold.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/miller/headlinebold.woff") format("woff"),
+		url("http://fonts.registerguard.com/miller/headlinebold.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/miller/headlinebold.svg#web") format("svg");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "MillerHeadline Light";
+	src: url("http://fonts.registerguard.com/miller/headlinelight.eot");
+	src: url("http://fonts.registerguard.com/miller/headlinelight.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/miller/headlinelight.woff") format("woff"),
+		url("http://fonts.registerguard.com/miller/headlinelight.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/miller/headlinelight.svg#web") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family:"RGWeb";
+	src:url("http://fonts.registerguard.com/rg/rgweb.eot");
+	src:url("http://fonts.registerguard.com/rg/rgweb.eot?#iefix") format("embedded-opentype"),
+		url("http://fonts.registerguard.com/rg/rgweb.woff") format("woff"),
+		url("http://fonts.registerguard.com/rg/rgweb.ttf") format("truetype"),
+		url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
+	font-weight:normal;font-style:normal;
+}
+/* start of .mm */
+
+.mm {
+	height: 0;
+	padding-bottom: 56.25%; /*16:9 = (9 / 16 = .5625) x 100*/
+	position: relative;
+	overflow: hidden;
+}
+
+.mm .embed {
+	border: 0;
+	width: 100% !important;
+	height: 100% !important;
+	max-width: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.theatre { padding-bottom: 59.171597633136%; } /*1.69:1 = (1 / 1.69 = .59171597633136) x 100*/
+
+.slide { padding-bottom: 66.666666666667%; } /*3:2 = (2 / 3 = .66666666666667) x 100*/
+
+.tv { padding-bottom: 75%; } /*4:3 = (3 / 4 = .75) x 100*/
+
+.funky { padding-bottom: 41.666666666667%; } /* 1080 × 450  (450 / 1080) = 41.66667 */
+
+/* end of .mm */
+
+/* addthis */
+.addthis_sharing_toolbox{
+	width: 100%;
+	margin-top: 24px;
+	text-align: center;
+}
+
+@media (min-width: 980px) {
+	.addthis_sharing_toolbox{
+		width: 20%;
+		float: right;
+		text-align: right;
+	}
+}
+/* end of addthis */
+
+/*footer*/
+#bd_press{
+	font: .75em Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	color: #999;
+}
