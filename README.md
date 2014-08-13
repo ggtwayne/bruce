@@ -1,10 +1,11 @@
 # bruce
 
-### Quick start
+Simple, reponsive story template created for [registerguard.com](http://registerguard.com) by [Rob Denton](http://github.com/robertdenton). 
 
-[Download zip](https://github.com/rgpages/bruce/archive/gh-pages.zip) and trash everything except for the `getting-started` folder.
+This is meant to be built off of for special stories. It's not to be taken as is because without a spectacular story, it doesn't mean much. It's a tool. It's a means of storytelling. It's not whats underneath but what we do with it that defines us.
 
-Open `index.html` and paste in html story before in the first `.bat_story` div.  Then read the story and add in images where appropriate using example images below as templates. When you're done, delete the template lines and your page should be ready to roll.
+![batman_returns3](https://cloud.githubusercontent.com/assets/4853944/3446952/fa6fbaa2-0147-11e4-8bd9-e9b748ea15b8.gif)
+([credit](http://i26.photobucket.com/albums/c117/shocktrooper327/batman_returns3.gif))
 
 ---
 
@@ -20,12 +21,11 @@ Open `index.html` and paste in html story before in the first `.bat_story` div. 
 
 ---
 
-Simple, reponsive story template created for [registerguard.com](http://registerguard.com) by [Rob Denton](http://github.com/robertdenton). 
+### Quick start
 
-This is meant to be built off of for special stories. It's not to be taken as is because without a spectacular story, it doesn't mean much. It's a tool. It's a means of storytelling. It's not whats underneath but what we do with it that defines us.
+[Download zip](https://github.com/rgpages/bruce/archive/gh-pages.zip) and trash everything except for the `getting-started` folder.
 
-![batman_returns3](https://cloud.githubusercontent.com/assets/4853944/3446952/fa6fbaa2-0147-11e4-8bd9-e9b748ea15b8.gif)
-([credit](http://i26.photobucket.com/albums/c117/shocktrooper327/batman_returns3.gif))
+Open `index.html` and paste in html story before in the first `.bat_story` div.  Then read the story and add in images where appropriate using example images below as templates. When you're done, delete the template lines and your page should be ready to roll.
 
 ## Demos
 
