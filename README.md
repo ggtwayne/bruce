@@ -127,6 +127,7 @@ They go outside `.bat_story`
   * `.pure-table`: [pure css](http://purecss.io/) template table
 * `figcaption`: caption styles
 * `.bat_full`: full-width photo
+* `.bat_inset`: full-width photo caption inset, put in `figcaption`
 * `.bat_story`: text style
 * `.bat_quote`: pull quote container
   * `h4`: quote text
