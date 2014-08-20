@@ -240,9 +240,24 @@ footer{
 	.bat_head p{
 		xfont-size:7.5em;
 	}
-
-	/* center up center image if there is a max-width*/
-	.bat_full{}
+	
+	.bat_full{
+		position: relative; /*for .bat_inset*/
+	}
+	
+	/* inset caption on full width with .inset class */
+	.bat_inset{
+		position: absolute;
+		bottom: 0;
+		background: rgba(255, 255, 255, .7);
+		margin: 0;
+		width: 100%;
+	}
+	
+	/*for .bat_inset*/
+	.bat_full figcaption{
+		padding: 1em 3em;
+	}
 	
 	/* story style */
 	.bat_story{
