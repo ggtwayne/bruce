@@ -7,11 +7,15 @@ This is meant to be built off of for special stories. It's not to be taken as is
 ![batman_returns3](https://cloud.githubusercontent.com/assets/4853944/3446952/fa6fbaa2-0147-11e4-8bd9-e9b748ea15b8.gif)
 ([credit](http://i26.photobucket.com/albums/c117/shocktrooper327/batman_returns3.gif))
 
+#### Quick start
+
+[Download zip](https://github.com/rgpages/bruce/archive/gh-pages.zip) or clone repo and trash everything except for `index.html`, `bat_styles.css` and the `media` folder.
+
 ---
 
 ## Table of Contents
 
-* [Quick Start](#quick-start)
+* [Getting Started](#getting-started)
 * [Demos](#demos)
 * [Notes](#notes)
   * [Vertical images](#vertical-images)
@@ -21,11 +25,27 @@ This is meant to be built off of for special stories. It's not to be taken as is
 
 ---
 
-### Quick start
 
-[Download zip](https://github.com/rgpages/bruce/archive/gh-pages.zip) and trash everything except for the `getting-started` folder.
+## Getting started
 
-Open `index.html` and paste in html story before in the first `.bat_story` div.  Then read the story and add in images where appropriate using example images below as templates. When you're done, delete the template lines and your page should be ready to roll.
+Clone this repo to your local machine using Github app. For more info on Github click see their [help pages](https://mac.github.com/help.html).
+
+Collect all resources for the story including text formatted as html. Online [text to html converter](http://www.textfixer.com/html/convert-text-html.php). I use `<p>` only, `<br>` and I do not encode characters. Add media to appropriate media folder.
+
+Open `index.html` and determine which `.bat_story` layout you want. If you want it left aligned with images floating to the right use the current `.bat_story`. If you want it centered up and at max-width 800px then update the `.bat_story` class as needed. See second main section of `index.html` for example code below subhead `<h3>`.
+
+Create a `.bat_story` with your whole story in there. Then go through and break it up with images as needed. See example code for all possibilities of `.bat_media`, simple `<figure>` and `.bat_full`.
+
+Make sure to update:
+
+* [ ] RG top bar
+* [ ] headline
+* [ ] deck
+* [ ] byline
+* [ ] pub date
+
+For more advanced functionality, see parallax files or other stories. See Demos below for examples.
+
 
 ## Demos
 
